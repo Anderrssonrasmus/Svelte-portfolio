@@ -2,14 +2,20 @@
     import Barcode from "/images/barcode.png";
 </script>
 
-<div class="titleCard">
-    <h1>Rasmus Andersson</h1>
-    <h2>Portfolio_</h2>
-</div>
-<div class="barcode">
-    <img srcset={Barcode} alt="" />
-    <a href="#">Continue</a>
-</div>
+<section class="hero">
+    <div class="titleCard">
+        <h1>Rasmus Andersson</h1>
+        <h2>Portfolio_</h2>
+    </div>
+    <div class="barcode">
+        <img srcset={Barcode} alt="" />
+        <a href="#">Continue</a>
+    </div>
+</section>
+
+<section class="projects">
+    <div class="project-list" />
+</section>
 
 <style lang="scss">
     .titleCard {
