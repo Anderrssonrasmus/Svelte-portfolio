@@ -1,0 +1,59 @@
+footer {
+    .corner-lines {
+        height: 203px;
+        width: 203px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 32px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        .logo {
+            div {
+                margin: 32px;
+                transform: rotate(-225deg);
+                border: 32px solid transparent;
+                border-top-color: #262626;
+            }
+        }
+
+        .lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            div {
+                background: #262626;
+                display: block;
+                position: absolute;
+
+                &:nth-child(1) {
+                    bottom: 0;
+                    right: 50px;
+                    width: calc(100% - 50px);
+                    height: 2px;
+                }
+
+                &:nth-child(2) {
+                    right: 0;
+                    bottom: 50px;
+                    height: calc(100% - 50px);
+                    width: 2px;
+                }
+
+                &:nth-child(3) {
+                    right: 0;
+                    bottom: -20px;
+                    height: 70px;
+                    width: 2px;
+                    transform: rotate(45deg);
+                    transform-origin: top;
+                }
+            }
+        }
+    }
+}

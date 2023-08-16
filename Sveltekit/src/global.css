@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,9 @@ body {
   font-family: "Kleenmax";
   src: url(fonts/kleemaxdemo.ttf);
 }
+
 @font-face {
   font-family: "Krona";
   src: url(fonts/KronaOne-Regular.ttf);
-}/*# sourceMappingURL=global.css.map */
+}
+/*# sourceMappingURL=global.css.map */

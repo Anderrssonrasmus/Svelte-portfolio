@@ -1,0 +1,55 @@
+header {
+    .corner-lines {
+        height: 203px;
+        width: 203px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 32px;
+
+        .logo {
+            img {
+                width: 64px;
+                transform: rotate(-45deg);
+                margin: 32px;
+            }
+        }
+
+        .lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            div {
+                background: #262626;
+                display: block;
+                position: absolute;
+
+                &:nth-child(1) {
+                    top: 0;
+                    left: 50px;
+                    width: calc(100% - 50px);
+                    height: 2px;
+                }
+
+                &:nth-child(2) {
+                    left: 0;
+                    top: 50px;
+                    height: calc(100% - 50px);
+                    width: 2px;
+                }
+
+                &:nth-child(3) {
+                    left: 0;
+                    top: -20px;
+                    height: 70px;
+                    width: 2px;
+                    transform: rotate(45deg);
+                    transform-origin: bottom;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+footer .corner-lines {
+  height: 203px;
+  width: 203px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+footer .corner-lines .logo div {
+  margin: 32px;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  border: 32px solid transparent;
+  border-top-color: #262626;
+}
+
+footer .corner-lines .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer .corner-lines .lines div {
+  background: #262626;
+  display: block;
+  position: absolute;
+}
+
+footer .corner-lines .lines div:nth-child(1) {
+  bottom: 0;
+  right: 50px;
+  width: calc(100% - 50px);
+  height: 2px;
+}
+
+footer .corner-lines .lines div:nth-child(2) {
+  right: 0;
+  bottom: 50px;
+  height: calc(100% - 50px);
+  width: 2px;
+}
+
+footer .corner-lines .lines div:nth-child(3) {
+  right: 0;
+  bottom: -20px;
+  height: 70px;
+  width: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+/*# sourceMappingURL=footer.css.map */
