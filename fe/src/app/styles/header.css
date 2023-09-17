@@ -5,6 +5,23 @@ header .corner-lines {
   top: 0;
   left: 0;
   margin: 32px;
+  z-index: 9999;
+}
+
+header .corner-lines .logo {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+header .corner-lines .logo.navOpen img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: -webkit-transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 header .corner-lines .logo img {
@@ -12,6 +29,12 @@ header .corner-lines .logo img {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin: 32px;
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: -webkit-transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 header .corner-lines .lines {
@@ -20,6 +43,7 @@ header .corner-lines .lines {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 header .corner-lines .lines div {

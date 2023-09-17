@@ -13,7 +13,7 @@ export default function Home() {
       <div className="barcode">
         <Image src={Barcode}
           alt='' />
-        <a href="#">Continue</a>
+        <a href="#">Explore</a>
       </div>
     </section>
   )

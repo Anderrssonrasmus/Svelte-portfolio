@@ -6,12 +6,25 @@ header {
         top: 0;
         left: 0;
         margin: 32px;
+        z-index: 9999;
 
         .logo {
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+
+            &.navOpen img {
+                transform: scale(1.1);
+                transition: transform 1.2s cubic-bezier(.075, .82, .165, 1);
+            }
+
             img {
                 width: 64px;
                 transform: rotate(-45deg);
                 margin: 32px;
+                transition: transform 1.2s cubic-bezier(.075, .82, .165, 1);
+                transform-origin: center;
             }
         }
 
@@ -21,6 +34,7 @@ header {
             left: 0;
             right: 0;
             bottom: 0;
+            z-index: -1;
 
             div {
                 background: #262626;

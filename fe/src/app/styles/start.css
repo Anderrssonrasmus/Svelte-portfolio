@@ -34,6 +34,22 @@
   -webkit-text-stroke: 2px #262626;
 }
 
+.hero:after {
+  content: "";
+  height: 100vh;
+  background-image: url(../../../public/logo_black.svg);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: 50% 75px;
+  opacity: 7%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .barcode {
   position: absolute;
   bottom: -4px;
