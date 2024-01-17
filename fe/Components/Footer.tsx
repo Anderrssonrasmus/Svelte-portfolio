@@ -1,6 +1,7 @@
 import "../src/app/styles/footer.scss";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { usePathname, useSearchParams } from 'next/navigation'
 
 export default function Footer() {
 
@@ -11,7 +12,6 @@ export default function Footer() {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const menuItem = useRef(null);
     let interval: any = null;
-
 
     const glitch = event => {
         let iteration = 0;
@@ -37,6 +37,12 @@ export default function Footer() {
             iteration += 1 / 3;
         }, 30);
     }
+
+    const pathname = usePathname()
+    const searchParams = useSearchParams()
+    useEffect(() => {
+        setNavOpen(false);
+    }, [pathname, searchParams])
 
     return (
         <footer>
