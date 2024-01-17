@@ -44,6 +44,7 @@ export default function Footer() {
         setNavOpen(false);
     }, [pathname, searchParams])
 
+    /*
     return (
         <footer>
             <div className="corner-lines">
@@ -74,5 +75,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )
+    )*/
 }

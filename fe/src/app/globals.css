@@ -2,6 +2,7 @@ html,
 body {
   max-width: 100vw;
   overflow: hidden;
+  height: 100%;
 }
 
 * {
@@ -31,6 +32,13 @@ body:after {
   z-index: 0;
   pointer-events: none;
   opacity: .04;
+}
+
+
+main {
+  padding: 20px calc(85px + 64px);
+  position: relative;
+  min-height: 100dvh;
 }
 
 @keyframes spin {
@@ -93,3 +101,5 @@ body:after {
   font-family: "NeueHass";
   src: url(../../public/fonts/NeueHaasDisplayBlack.ttf);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');

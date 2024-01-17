@@ -1,3 +1,9 @@
+.hero {
+    display: flex;
+    position: relative;
+    min-height: 100dvh;
+}
+
 .titleCard {
     font-family: "Kleenmax";
     color: #262626;
@@ -38,6 +44,54 @@
     bottom: 0;
     right: 0;
     z-index: -1;
+}
+
+.miniMenu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    article {
+        position: relative;
+        padding-top: 12px;
+
+        &:before {
+            content:"";
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;            
+            height: 2px;
+            width: 100%;
+            background: #c3c3c3;
+            transition: background-color 0.2s ease;
+        }
+
+        &:hover:before {
+            background: #262626;
+        }
+
+        a {
+           font-size: 18px;
+           font-family: 'Questrial', sans-serif; 
+           text-decoration: none;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           gap: 64px;
+           color: #262626;
+
+           svg {
+            height: 20px;
+            width: 20px;
+           }
+        }
+    }
 }
 
 .barcode {
