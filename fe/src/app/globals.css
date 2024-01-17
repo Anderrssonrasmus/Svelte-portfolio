@@ -2,6 +2,7 @@ html,
 body {
   max-width: 100vw;
   overflow: hidden;
+  height: 100%;
 }
 
 * {
@@ -33,6 +34,12 @@ body:after {
   opacity: .04;
 }
 
+
+main {
+  padding: 20px calc(85px + 64px);
+  position: relative;
+  min-height: 100dvh;
+}
 @keyframes spin {
   0% {
     background-position: 0 0;
@@ -88,3 +95,5 @@ body:after {
   font-family: "Krona";
   src: url(../../public/fonts/KronaOne-Regular.ttf);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');

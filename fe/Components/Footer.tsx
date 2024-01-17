@@ -37,7 +37,7 @@ export default function Footer() {
             iteration += 1 / 3;
         }, 30);
     }
-
+    /*
     return (
         <footer>
             <div className="corner-lines">
@@ -68,5 +68,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )
+    )*/
 }

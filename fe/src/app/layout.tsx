@@ -24,6 +24,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <script src="https://kit.fontawesome.com/e0020bd8c7.js" crossorigin="anonymous"></script>
       </body>
     </html>
   )

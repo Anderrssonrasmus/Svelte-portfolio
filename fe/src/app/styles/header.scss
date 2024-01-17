@@ -1,4 +1,39 @@
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100dvh;
+    width: fit-content;
+    padding: 20px 10px;
+    border-right: 1px solid #262626;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    button {
+        border: none;
+        outline: none;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        cursor: pointer;
+
+        span.line {
+            width: 2px;
+            height: 32px;
+            background: #262626;
+        }
+    }
+
+    .linkedin {
+        font-size: 24px;
+        color: #262626;
+    }
+
+    /*
     .corner-lines {
         height: 203px;
         width: 203px;
@@ -65,5 +100,94 @@ header {
                 }
             }
         }
+    }
+    */
+}
+
+.menuContainer {
+    width: 100vw;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translatex(-100%);
+    transition: transform 1.2s cubic-bezier(.075, .82, .165, 1);
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    nav {
+        gap: 128px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul:not(.contact-info) {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    nav ul:not(.contact-info) a,
+    h2 {
+        font-size: 96px;
+        font-family: "Kleenmax", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #262626;
+        position: relative;
+    }
+
+    .contact-info {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-info > h2 {
+        font-size: 96px;
+        font-family: "Kleenmax", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #262626;
+        color: transparent;
+    }
+
+    .contact-info a {
+        font-size: 24px;
+        font-family: 'Questrial', sans-serif;
+        color: #262626;
+        text-decoration: none;
+    }
+
+    a:not(.start):after {
+        content: "";
+        max-width: 0%;
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #262626;
+        transition: all 0.8s cubic-bezier(.075, .82, .165, 1);
+    }
+
+    a:hover:after {
+        max-width: 100%;
+    }
+
+    &:nth-child(1) {
+        height: 50vh;
+        padding: 128px 226px;
+        z-index: 9;
+    }
+
+    &.open {
+        transform: translatex(0%);
     }
 }
